@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>sign in</title>
+    <link rel="icon" href="/images/logo_real.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/css.css">
+</head>
+<body>
+  <ul>
+    <img src="/images/logo.png" alt="logo">
+    <li><a class="active" href="/index.html">Home</a></li>
+    <li><a href="/user.html">cars for sales</a></li>
+    <li><a href="/registration.html">register</a></li>
+    <li><a href="/sign_in.html">sign in</a></li>
+  </ul>
+
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+    </script> 
+
+
+  
+
+
+  <form action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="/images/person.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+          
+      <button type="submit" class="loginbtn">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> save
+        <span class="psw"><a href="#">Forgot password?</a></span>
+      </label>
+
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      
+    </div>
+  </form>
+    
+</body>
+</html>
