@@ -1,0 +1,303 @@
+/* @media only screen and (min-width: 1024px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 480px) {
+
+}
+@media only screen and (min-width: 320px) {
+
+} */
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: khaki;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(5, 3, 3);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(243, 137, 87);
+}
+ul img{
+  height: 50px;
+  width: 50px;
+  float: right;
+}
+
+
+.nav.nav-pills.mb-3{
+
+  background-color:khaki;
+  height: 50px;
+
+
+}
+.logo{
+  
+  float: left;
+  
+  margin-right:20px ;
+}
+
+
+div.card.text-center{
+  display:inherit;
+  margin: 10px;
+  float: left;
+  width: 350px;
+  height: 430px;
+  background-color: khaki;
+}
+
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: #0cabf5;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 20px;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: dodgerblue;
+}
+
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+h3{font-size: 30px;
+  font-style: oblique;
+  margin-bottom: 5px;
+
+}
+footer{
+  margin-top: 0%;
+  background-color: khaki;
+  
+}
+
+/* sign_in.html */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0cabf5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 5%;
+  
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  
+}
+
+/* Change styles for span button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+.loginbtn{
+  font-size: 20px;
+}
+
+/* burger bar */
+
+
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: khaki;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  position: absolute;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(3, 2, 2);
+  padding: 10px 15px;
+  border: none;
+  background-color: khaki;
+  width: auto;
+  margin-top: -1px;
+  
+  
+}
+
+
+
+.home_back{
+  box-sizing:100% ;
+}
+
+.home_back h4{
+  
+  position: absolute;
+  font-size: 60px ;
+  font-style: oblique;
+  color: #818181;
+  margin-left: 30%;
+}
+@media screen and (max-width: 300px) {
+  h4 {
+     display: block;
+     float: none;
+  }
+}
+
+.home_back p{
+  position: absolute;
+  font-size: 30px ;
+  color: rgb(39, 38, 38);
+  border-color: black;
+  margin-top: 300px;
+  margin-left: 3%;
+  
+}
+
+
+@media screen and (max-width: 300px) {
+  .home_back p {
+     display: block;
+     float: none;
+  }
+}
+
+
+
+.home_back img{
+  width: 100%;
+  display: inline-block;
+}
