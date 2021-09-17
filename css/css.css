@@ -141,8 +141,10 @@ h3{font-size: 30px;
 footer{
   margin-top: 0%;
   background-color: khaki;
+  font-family: 'Fredericka the Great', cursive;
   
 }
+
 
 /* sign_in.html */
 
@@ -195,12 +197,12 @@ span.psw {
 }
 
 /* Change styles for span button on extra small screens */
-@media screen and (max-width: 300px) {
+/* @media screen and (max-width: 300px) {
   span.psw {
      display: block;
      float: none;
   }
-}
+} */
 .loginbtn{
   font-size: 20px;
 }
@@ -243,7 +245,7 @@ span.psw {
 }
 
 .openbtn {
-  position: absolute;
+  
   font-size: 20px;
   cursor: pointer;
   color: rgb(3, 2, 2);
@@ -258,26 +260,46 @@ span.psw {
 
 
 
+
+
 .home_back{
   box-sizing:100% ;
 }
 
 .home_back h4{
+  font-family: 'Fredericka the Great', cursive;
+
+  position: absolute;
+  font-size: 60px;
+  color: #818181;
+  margin-left: 30%;
+
+
+  
+  background: repeating-radial-gradient( #ff3300 0%, #660066 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* .home_back h4{
   
   position: absolute;
   font-size: 60px ;
   font-style: oblique;
   color: #818181;
-  margin-left: 30%;
-}
-@media screen and (max-width: 300px) {
+  margin-left: 30%; 
+  
+} */
+
+
+
+/* @media screen and (max-width: 300px) {
   h4 {
      display: block;
      float: none;
   }
-}
+} */
 
-.home_back p{
+/* .home_back p{
   position: absolute;
   font-size: 30px ;
   color: rgb(39, 38, 38);
@@ -285,7 +307,7 @@ span.psw {
   margin-top: 300px;
   margin-left: 3%;
   
-}
+} */
 
 
 @media screen and (max-width: 300px) {
@@ -301,3 +323,32 @@ span.psw {
   width: 100%;
   display: inline-block;
 }
+
+#navbar{
+
+  
+  display: flexbox;
+  justify-content: space-around;
+  align-content: stretch;
+  
+  font-family: 'Fredericka the Great', cursive;
+  
+
+  
+  
+  
+
+  
+}
+
+#navbar ul{
+  justify-content: stretch;
+  
+
+}
+
+#mySidepanel{
+  font-family: 'Fredericka the Great', cursive;
+
+}
+
