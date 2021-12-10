@@ -11,151 +11,88 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
-    
-
+  
   </head>
   <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    
-
-
-
-    <div id="navbar">
-      <ul>
-       <li>
-         <a class="openbtn" onclick="openNav()">☰</a> 
-       </li>
-       
-       <li>
-         <a class="active" href="/index.html">Home</a>
-       </li>
-       <li>
-         <a href="/html/user.html">cars for sales</a>
-       </li>
-       <li>
-         <a href="/html/registration.html">register</a>
-       </li>
-       <li>
-         <a href="/html/sign_in.html">sign in</a>
-       </li>
-       <li>
-         <img src="/images/logo.png" alt="logo">
-       </li>
-       
-  
-  
-      </ul>
-  
-  
-  
-  
-    </div>
-    
-    
-
-    <div id="mySidepanel" class="sidepanel">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
-    
-    
-    <script>
-      function openNav() {
-        document.getElementById("mySidepanel").style.width = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidepanel").style.width = "0";
-      }
-      </script>   
-    <div class="home_back">
-      <h4>Buy Used Cars Cheaply</h4>
-      
-      
-      <img src="/images/car1.jpg" alt="imgage1">
-      
-    </div>
-     
-
-    <img src="/images/car2.jpg" alt="image2 ">
-
-
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/images/mercedes_e.jpg" class="d-block w-100" alt="mercedes_e">
-        </div>
-        <div class="carousel-item">
-          <img src="/images/mini_cooper.webp" class="d-block w-100" alt="mini_cooper">
-        </div>
-        <div class="carousel-item">
-          <img src="/images/nissan_micra.jpg" class="d-block w-100" alt="nissan_micra">
+<!-- navbar -->
+    <div class="flexbox-container">
+      <div class="flexbox-item flexbox-item-0 "> <a href="#"><img src="/images/logo.png" ></a></div>
+      <div class="flexbox-item flexbox-item-1 "><a class="flexbox-button" type="button" id="dropdownMenuButton1" aria-expanded="false" href="/index.html">Home</a> </div>
+      <div class="flexbox-item flexbox-item-2"><a class="flexbox-button" type="button" id="dropdownMenuButton1"  aria-expanded="false">News</a> </div>
+      <div class="flexbox-item flexbox-item-3"><a class="flexbox-button" type="button" id="dropdownMenuButton1"  aria-expanded="false" href="/html/sign_in.html">Profile</a> </div>
+      <div class="flexbox-item flexbox-item-4"><a class="flexbox-button" type="button" id="dropdownMenuButton1"  aria-expanded="false">About</a> </div>
+      <div class="flexbox-item flexbox-item-5">
+<!-- dropdown -->
+      <div class="dropdown">
+        <a class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a class="dropdown-item" href="#">Instagram <img src="/images/instagram.png" class="dropdown-img"></a>
+          <a class="dropdown-item" href="#">Facebook <img src="/images/facebook.png" class="dropdown-img"></a>
+          <a class="dropdown-item" href="#">youtube <img src="/images/youtube.png" class="dropdown-img"></a>
+          <a class="dropdown-item" href="#">Linkedin <img src="/images/linkedin.png" class="dropdown-img"></a>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
+      </div>
+<!-- notification and profile -->
+      <div class="flexbox-item flexbox-item-6">  <a href="#"><img src="/images/notification.png"  ></a><span class="span">+1</span></div>
+      <div class="flexbox-item flexbox-item-7"> <a href="#"><img src="/images/person-transparant.png" ></a></div>
+
+    </div>
+<!-- background -->
+    <div class="background">
+      <p class="para">The Best Movies <br> in the world</p>
+<!-- carousel -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/extras/WARRIOR FF.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="/images/extras/dragon.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="/images/extras/imagem top.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="/images/extras/Mob Psycho 100 wallpaper by EPICFLAMS - 0305 - Free on ZEDGE™.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="/images/extras/Itachi.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="/images/extras/Vegeta _ Dragon Ball ANIMATION.jpg" class="d-block w-100" >
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <img src="/images/extras/Sukuna, Adriel Sandro.jpg" alt="background-img1">
+
+
     </div>
 
-
-
-
-
-
-
     
 
 
 
-    <footer>
-      <p>Author: mikheil abuladze<br>
-      <a href="mikheili@gmail.com">mikheili@gmail.com</a></p>
-    </footer>
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-
-    
-
-
-
-
-
-
-
-
+      
   </body>
 </html> 

@@ -1,354 +1,428 @@
-/* @media only screen and (min-width: 1024px) {
-
-}
-@media only screen and (min-width: 768px) {
-
-}
-@media only screen and (min-width: 480px) {
-
-}
-@media only screen and (min-width: 320px) {
-
-} */
 
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: khaki;
-}
+/* index.html */
 
-li {
-  float: left;
-}
+.flexbox-container {
+  display: flex;
 
-li a {
-  display: block;
-  color: rgb(5, 3, 3);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+  /* sicarielis ertmanetsh shoris chasagdebad */
+  /* justify-content:space-between; */
 
-li a:hover {
-  background-color: rgb(243, 137, 87);
-}
-ul img{
-  height: 50px;
-  width: 50px;
-  float: right;
-}
+  /*centrshi gasasworeblad itemebis */
+  /* align-items: center; */
 
+  /* itmemebis vertikalurad dasalageblad */
+  /* flex-direction: column; */
 
-.nav.nav-pills.mb-3{
-
-  background-color:khaki;
-  height: 50px;
+  background-color: #333;
 
 
 }
-.logo{
-  
-  float: left;
-  
-  margin-right:20px ;
-}
-
-
-div.card.text-center{
-  display:inherit;
+.flexbox-item {
+  width: 80px;
   margin: 10px;
-  float: left;
-  width: 350px;
-  height: 430px;
-  background-color: khaki;
+
+  max-height: 40px;
+  text-align: center;
+
+  font-family: 'Fuzzy Bubbles';
+  
+
 }
 
+.flexbox-item-0{
+
+  margin-right: 50px;
 
 
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.flexbox-item-0 img{
+  height: 40px;
+  align-self: center;
+  
+  
   
 }
 
-* {
-  box-sizing: border-box;
-}
+.flexbox-item-1{
+  /* ar sheikveceba zomashi rac ar unda moxdes */
+  /* flex-shrink: 0; */
 
-/* Add padding to containers */
-.container {
-  padding: 16px;
-  background-color: white;
-}
+  /* item ganlagdeba tavshi */
+  /* align-self:flex-start; */
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+  /* itmebis tanmimdevrobis shecvla htmls gareshe */
+  /* order: 3; */
 }
 
 
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+.flexbox-item-2{
+
+
+  /*gaxdeba imxela simaglis ramdenic uweria tviton */
+  /* align-self: center; */
+
+  /* order: 1; */
 }
 
+.flexbox-item-3{
 
-.registerbtn {
-  background-color: #0cabf5;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+
+  /* itemi daikavebs mtlian darchenil adgils ramdenic ar unda iyos is */
+  /* flex-grow: 1; */
+
+  /*itemi chamova tavisi rigis boloshi */
+  /* align-self: flex-end; */
+
+  /* order: 2; */
+
+}
+.flexbox-item-6{
+  margin-left: auto;
+  
+}
+.flexbox-item-6 img{
+  align-self: center;
+
+  height: 20px;
+}
+.flexbox-item-7 img{
+  align-self: center;
+  
+  height: 23px;
+}
+.flexbox-item-1 a{
+  color: rgb(25, 204, 22);
+  text-decoration: 0;
   font-size: 20px;
 }
+.flexbox-item-2 a{
+  color: rgb(25, 204, 22);
+  text-decoration: 0;
+  font-size: 20px;
+}
+.flexbox-item-3 a{
+  color: rgb(25, 204, 22);
+  text-decoration: 0;
+  font-size: 20px;
+}
+.flexbox-item-4 a{
+  color: rgb(25, 204, 22);
+  text-decoration: 0;
+  font-size: 20px;
+}
+.flexbox-item-5{
+  color: rgb(25, 204, 22);
 
-.registerbtn:hover {
-  opacity: 1;
+
+  border: none;
+  cursor: pointer;
+}
+
+.flexbox-item-5 a{
+  color: rgb(25, 204, 22);
+  text-decoration: 0;
+  font-size: 20px;
+}
+.flexbox-button{
+  border: 0px;
+  background: 0px;
+  color: rgb(25, 204, 22);
+  text-decoration: 0;
+  font-size: 20px;
+}
+.dropdown-img{
+  height: 20px;
+  align-self: center;
 }
 
 
-a {
-  color: dodgerblue;
+
+
+.background{
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("/images/background-img1.jpg");
+}
+.background img{
+  width: 100%;
+}
+.background .para{
+  position:absolute;
+  margin-top: 2%;
+  color: rgb(25, 204, 22);
+  font-size: 80px;
+  right: 10%;
+  font-family: 'Fuzzy Bubbles';
+
+}
+
+.carousel{
+
+  width: 400px;
+  margin: 60px;
+  margin-left: 100px;
+
+  border: 5px;
+  border-color: rgb(25, 204, 22);
+  border-style:solid;
+  border-radius: 8px;
+
+
 }
 
 
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
-}
 
-h3{font-size: 30px;
-  font-style: oblique;
-  margin-bottom: 5px;
+.span{
+  color: rgb(25, 204, 22);
 
-}
-footer{
-  margin-top: 0%;
-  background-color: khaki;
-  font-family: 'Fredericka the Great', cursive;
   
 }
 
 
-/* sign_in.html */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropbtn {
+
+  color: rgb(25, 204, 22);
+  font-size: 20px;
+  background-color: transparent;
+
+
+  border: none;
+  
+  cursor: pointer;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* .dropdown-content a {
+  color: rgb(25, 204, 22);;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} */
+
+/* .dropdown-content a:hover {background-color: #f1f1f1} */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/* sign_in.html ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 
 body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
 
+/* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(25, 204, 22);
   box-sizing: border-box;
+
 }
 
+/* Set a style for all buttons */
 button {
-  background-color: #0cabf5;
+  background-color: rgb(25, 204, 22);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
 }
 
 button:hover {
   opacity: 0.8;
 }
 
-
-
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
 }
 
+/* Center the image and position the close button */
+.imgcontainer {
+
+  text-align: center;
+  margin: 0 12px 0;
+  position: relative;
+  width: 80% ;
+  padding-top: 30px  ;
+  padding-left: 17%;
+
+
+
+}
+.avatar{
+  width: 20%;
+}
+.formclass{
+  background-image:  url("/images/extras/SpH.jpg") ;
+
+
+}
+
+/* .background_img{
+  background-image: url("/images/ricky\ and\ morty.jpg");
+  background-repeat: no-repeat;
+
+} */
+/* .background_img img{
+
+  width: 100%;
+
+} */
+
 img.avatar {
-  width: 30%;
-  border-radius: 5%;
-  
+  width: 40%;
+  border-radius: 50%;
 }
 
 .container {
   padding: 16px;
+  font-family: 'Fuzzy Bubbles';
+  color: rgb(25, 204, 22);
 }
 
 span.psw {
   float: right;
-  
+  padding-top: 16px;
+
+
 }
 
-/* Change styles for span button on extra small screens */
-/* @media screen and (max-width: 300px) {
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(25, 204, 22); /* Fallback color */
+  background-color: rgb(25, 204, 22); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: rgb(25, 204, 22);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
   span.psw {
      display: block;
      float: none;
   }
-} */
-.loginbtn{
-  font-size: 20px;
+  .cancelbtn {
+     width: 100%;
+  }
 }
-
-/* burger bar */
-
-
-
-.sidepanel  {
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  height: 250px;
-  top: 0;
-  left: 0;
-  background-color: khaki;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidepanel a:hover {
-  color: #f1f1f1;
-}
-
-.sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-}
-
-.openbtn {
-  
-  font-size: 20px;
-  cursor: pointer;
-  color: rgb(3, 2, 2);
-  padding: 10px 15px;
+.registerbtn{
+  /* background-color: rgb(25, 204, 22);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
-  background-color: khaki;
-  width: auto;
-  margin-top: -1px;
-  
-  
-}
-
-
-
-
-
-.home_back{
-  box-sizing:100% ;
-}
-
-.home_back h4{
-  font-family: 'Fredericka the Great', cursive;
-
+  cursor: pointer;
+  width: 50%;
   position: absolute;
-  font-size: 60px;
-  color: #818181;
-  margin-left: 30%;
-
+  margin-top: 10px;
+  top: 90%; 
+  right: 20%; */
+  margin-left: 2%;
 
   
-  background: repeating-radial-gradient( #ff3300 0%, #660066 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
 }
-/* .home_back h4{
-  
-  position: absolute;
-  font-size: 60px ;
-  font-style: oblique;
-  color: #818181;
-  margin-left: 30%; 
-  
-} */
-
-
-
-/* @media screen and (max-width: 300px) {
-  h4 {
-     display: block;
-     float: none;
-  }
-} */
-
-/* .home_back p{
-  position: absolute;
-  font-size: 30px ;
-  color: rgb(39, 38, 38);
-  border-color: black;
-  margin-top: 300px;
-  margin-left: 3%;
-  
-} */
-
-
-@media screen and (max-width: 300px) {
-  .home_back p {
-     display: block;
-     float: none;
-  }
-}
-
-
-
-.home_back img{
+.button_container{
+  display: flex;
+  background-color: none;
   width: 100%;
-  display: inline-block;
+
+
+  /* width: 30%; */
 }
-
-#navbar{
-
-  
-  display: flexbox;
-  justify-content: space-around;
-  align-content: stretch;
-  
-  font-family: 'Fredericka the Great', cursive;
-  
-
-  
-  
-  
-
-  
-}
-
-#navbar ul{
-  justify-content: stretch;
-  
+.button_1{
+  width: 20%;
 
 }
 
-#mySidepanel{
-  font-family: 'Fredericka the Great', cursive;
 
-}
 
+/* font-family: 'Fuzzy Bubbles'; */
+
+
+
+/* registration.html ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
